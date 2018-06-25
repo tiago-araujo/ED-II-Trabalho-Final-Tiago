@@ -10,7 +10,7 @@ int min(int a, int b){
 	if(a<=b)return a; return b;
 }
 
-void buildSegTree(int vet[], int ini, int fim, int segTree[], int pos){
+void buildSegTree(int vet[][], Cord ini, Cord fim, int segTree[][], int pos){
 	if (ini==fim){
 		segTree[pos]=vet[ini];
 		return;
